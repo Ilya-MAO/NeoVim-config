@@ -18,6 +18,7 @@ require("lazy").setup({
 	{ import = "plugins.gruvbox.plugin" },
 	{ import = "plugins.lualine.plugin" },
 	{ import = "plugins.bufferline.plugin" },
+	{ import = "plugins.comment.plugin" },
     checker = {
         enabled = false -- відключає автооновлення плагінів
     }

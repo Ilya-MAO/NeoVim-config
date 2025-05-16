@@ -20,7 +20,7 @@ return {
 				format = lspkind.cmp_format(format),
 
 				sources = cmp.config.sources({
-					{ name = 'nvim_lsp' },
+					{ name = 'nvim_lsp', max_item_count = 10 },
 					{ name = 'luasnip' },
 					{ name = 'buffer' },
 					{ name = 'path' }

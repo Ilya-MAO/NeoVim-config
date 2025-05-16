@@ -5,4 +5,6 @@ require('plugins.bufferline.mapping')
 
 
 map.im('<C-k>', '<Escape>')
-map.nm('<S-s>', ':Lazy reload<CR>')
+map.nm('<leader>c', ':!cmpl %<CR>')
+map.nm('<leader>f', ':!ffst %<CR>')
+map.vm('<C-y>', '"+y')

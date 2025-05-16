@@ -17,6 +17,7 @@ opt.smartindent = true -- підстановка відступа відносн
 opt.number = true -- нумерація рядків
 opt.relativenumber = true -- відносна нумерація рядків
 opt.cursorline = true -- підсвітка поточного номера
+opt.scrolloff = 5 -- скрол екрану починається за деяку кількість рядків, замість 0
 
 -- Спліти
 
