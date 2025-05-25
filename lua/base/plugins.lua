@@ -19,6 +19,7 @@ require("lazy").setup({
 	{ import = "plugins.lualine.plugin" },
 	{ import = "plugins.bufferline.plugin" },
 	{ import = "plugins.comment.plugin" },
+	{ import = "plugins.luasnip.plugin" },
     checker = {
         enabled = false -- відключає автооновлення плагінів
     }

@@ -5,6 +5,7 @@ require('plugins.bufferline.mapping')
 
 
 map.im('<C-k>', '<Escape>')
-map.nm('<leader>c', ':!cmpl %<CR>')
-map.nm('<leader>f', ':!ffst %<CR>')
 map.vm('<C-y>', '"+y')
+map.nm('<leader>c', ':!cmpl %<CR>')
+map.nm('<leader>f', ':!ffst -f %<CR>')
+map.nm('<leader>p', ':!ffst -p %<CR>')
