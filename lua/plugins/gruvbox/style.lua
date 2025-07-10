@@ -12,7 +12,5 @@ return {
 	strikethrough = false,
 	dim_inactive = true,
 	transperent_node = true,
-	overrides = {
-		Comment = {}
-	}
+	contrast = '',
 }

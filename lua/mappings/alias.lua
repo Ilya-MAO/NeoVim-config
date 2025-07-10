@@ -1,7 +1,6 @@
 local map = vim.keymap.set
-
-
 vim.g.mapleader = ' ' -- налаштування <leader> клавіши
+
 
 local function nm(key, command)
 	map('n', key, command, { noremap = true, silent = true }) -- шаблон для нормального мода

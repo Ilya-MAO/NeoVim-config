@@ -3,9 +3,10 @@ return {
 	diagnostics = 'nvim_lsp',
 
 	numbers = 'none', -- нумерація вікон. (можливо задати свою функцію)
-	separator_style = 'slant', -- стиль вкладок
-	enforce_regular_tabs = false, -- всі таби з днаковою шириною
+	tab_size = 10,
+	enforce_regular_tabs = true, -- всі таби з днаковою шириною
 	sort_by = 'directory', -- за чим сортувати
+	separator_style = 'thick', -- стиль вкладок
 	offsets = { -- робить різне оформлення для вкладок певного типу
 		{
 			filetype = 'NvimTree',
@@ -13,6 +14,9 @@ return {
 			text_align = 'center'
 		}
 	},
+
+	left_trunc_marker = '',
+	right_trunc_marker = '',
 
 	always_show_bufferline = true, -- чи показувати буферлінію для однієї вкладки
 	show_buffer_icons = true, -- іконки біля вкладок

@@ -1,3 +1,5 @@
+local venv = require("plugins.lualine.utils").venv
+
 local options = {
 	theme = 'gruvbox',
 	icon_enabled = true,
@@ -16,12 +18,11 @@ local extensions = { 'nvim-tree', 'fugitive' }
 local sections = {
 	lualine_a = { 'mode' }, -- поточний режим NeoVim
 	lualine_b = { 'diff', 'branch' }, -- гілка Git, зміни, LSD-діагностика
-	lualine_c = {},
-	lualine_x = { 'encoding' },
-	lualine_y = { 'diagnostics' },
-	lualine_z = { 'os.date("%H:%M:%S")' }
+	lualine_c = { venv },
+	lualine_x = { 'encoding' }, -- кодування
+	lualine_y = { 'diagnostics' }, -- діагностика синтаксису
+	lualine_z = { 'os.date("%H:%M:%S")' } -- час
 }
-
 
 return {
 	options = options,

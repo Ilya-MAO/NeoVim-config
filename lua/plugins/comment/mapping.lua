@@ -13,7 +13,6 @@ local opleader = {
 	block = 'gb' -- блочний коментар в visual mode
 }
 
-
 return {
 	mappings = mappings,
 	toggler = toggler,

@@ -6,5 +6,4 @@ local mapping = cmp_map.preset.insert({
 	['<S-Tab>'] = cmp_map.select_prev_item()
 })
 
-
 return { mapping = mapping }

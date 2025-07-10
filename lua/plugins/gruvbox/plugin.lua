@@ -5,6 +5,6 @@ return {
 		local opts = require('plugins.gruvbox.style')
 		require('gruvbox').setup(opts)
 
-		vim.cmd('colorscheme gruvbox')
+		vim.cmd("colorscheme gruvbox")
 	end
 }

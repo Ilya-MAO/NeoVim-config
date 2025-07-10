@@ -11,15 +11,17 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    { import = "plugins.autoclose" },
-    { import = "plugins.cmp.plugin" },
-	{ import = "plugins.lsp.plugin" },
-	{ import = "plugins.nvim-tree.plugin" },
-	{ import = "plugins.gruvbox.plugin" },
-	{ import = "plugins.lualine.plugin" },
-	{ import = "plugins.bufferline.plugin" },
-	{ import = "plugins.comment.plugin" },
-	{ import = "plugins.luasnip.plugin" },
+	{ import = "plugins.markdown-prev.plugin" }, -- автоматичні конструкції для швидкого писання кода
+    { import = "plugins.cmp.plugin" }, -- підсказки
+	{ import = "plugins.lsp.plugin" }, -- LSP-сервера для розуміння певних мов програмування
+	{ import = "plugins.nvim-tree.plugin" }, -- дерево файлової структури
+	{ import = "plugins.lualine.plugin" }, -- нижня полоска із інформацією
+	{ import = "plugins.bufferline.plugin" }, -- верхня полоска із вкладками
+	{ import = "plugins.comment.plugin" }, -- закоментовування коду через комбінації клавіш
+	{ import = "plugins.colorizer.plugin" }, -- фарбує текст RGB, HEX, ... в їх колір
+    { import = "plugins.autoclose" }, -- автозакривання дужок та лапок
+	{ import = "plugins.luasnip" }, -- автоматичні конструкції для швидкого писання кода
+	{ import = "plugins.gruvbox.plugin" }, -- тема gruvbox
     checker = {
         enabled = false -- відключає автооновлення плагінів
     }
