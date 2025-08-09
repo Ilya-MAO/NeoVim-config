@@ -5,7 +5,7 @@ return {
 	numbers = 'none', -- нумерація вікон. (можливо задати свою функцію)
 	tab_size = 10,
 	enforce_regular_tabs = true, -- всі таби з днаковою шириною
-	sort_by = 'directory', -- за чим сортувати
+	sort_by = 'id', -- за чим сортувати
 	separator_style = 'thick', -- стиль вкладок
 	offsets = { -- робить різне оформлення для вкладок певного типу
 		{

@@ -19,9 +19,11 @@ require("lazy").setup({
 	{ import = "plugins.bufferline.plugin" }, -- верхня полоска із вкладками
 	{ import = "plugins.comment.plugin" }, -- закоментовування коду через комбінації клавіш
 	{ import = "plugins.colorizer.plugin" }, -- фарбує текст RGB, HEX, ... в їх колір
+	{ import = "plugins.gruvbox.plugin" }, -- тема gruvbox
+	{ import = "plugins.dap.plugin" }, -- дебагер коду
+	{ import = "plugins.telescope.plugin" }, -- плагін для гнучкого пошуку
     { import = "plugins.autoclose" }, -- автозакривання дужок та лапок
 	{ import = "plugins.luasnip" }, -- автоматичні конструкції для швидкого писання кода
-	{ import = "plugins.gruvbox.plugin" }, -- тема gruvbox
     checker = {
         enabled = false -- відключає автооновлення плагінів
     }
