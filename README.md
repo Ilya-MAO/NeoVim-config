@@ -7,7 +7,7 @@
 <br>
 ![Size](https://img.shields.io/badge/Size:%201.2M-bd64cc)
 ![Dependencies](https://img.shields.io/badge/Dependencies:%204-468BA6)
-![Plugins](https://img.shields.io/badge/Plugins:%2011-BACBD9)
+![Plugins](https://img.shields.io/badge/Plugins:%2013-BACBD9)
 
 ![main-screenshot](./screenshots/scr1.png)
 
@@ -33,15 +33,17 @@
 9. **luasnip** -> готові синтаксичні конструкції для різних мов програмування
 10. **markdown-preview** -> можливість у браузері бачити результат для Markdown файлів
 11. **gruvbox** -> тема для NeoVim
+11. **dap** -> дебагер для коду
+11. **telescope** -> для зручного пошуку
 
 ## Встановлення конфігурації
 
 **1. Встановлюємо пакети**
 ```sh
-sudo pacman -S lua nvim clang npm
+sudo pacman -S lua nvim clang npm ripgrep
 ```
 
 **2. Клонуємо репозиторій**
 ```sh
-git clone https://github.com/Ilya-MAO/NeoVim-config.git "$PATH/.config/nvim/"
+git clone https://github.com/Ilya-MAO/NeoVim-config.git "$HOME/.config/nvim/"
 ```
