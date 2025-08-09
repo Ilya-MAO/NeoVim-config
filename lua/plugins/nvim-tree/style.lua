@@ -6,7 +6,7 @@ local view = {
 }
 
 local renderer = {
-	group_empty = true, -- поєднує порожні теми в одну
+	group_empty = false, -- поєднує порожні теми в одну
 	highlight_git = false, -- підсвічує git-статус
 	indent_markers = {
 		enable = true -- відображення ліній-гілок

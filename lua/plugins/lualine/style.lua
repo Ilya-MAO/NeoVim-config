@@ -1,4 +1,4 @@
-local venv = require("plugins.lualine.utils").venv
+local venv = require('plugins.lualine.utils').venv
 
 local options = {
 	theme = 'gruvbox',
@@ -7,8 +7,15 @@ local options = {
 
 	component_separators = '|',
 	section_separators = '',
-	
-	disabled_filetypes = {}
+
+	disabled_filetypes = {
+		'dap-repl',
+		'dapui_scopes',
+		'dapui_breakpoints',
+		'dapui_stacks',
+		'dapui_watches',
+		'dapui_console'
+	}
 }
 
 local inactive_sections = {} -- для неактивних вікон
@@ -17,9 +24,9 @@ local extensions = { 'nvim-tree', 'fugitive' }
 
 local sections = {
 	lualine_a = { 'mode' }, -- поточний режим NeoVim
-	lualine_b = { 'diff', 'branch' }, -- гілка Git, зміни, LSD-діагностика
-	lualine_c = { venv },
-	lualine_x = { 'encoding' }, -- кодування
+	lualine_b = { 'diff', { 'branch', color = { fg = '#F2ACD3' } } }, -- гілка Git, зміни, LSD-діагностика
+	lualine_c = { { venv, color = { fg = '#EFF323' } } }, -- віртуальне оточення venv
+	lualine_x = { { 'encoding', color = { fg = '#E4EAF2' } } }, -- кодування
 	lualine_y = { 'diagnostics' }, -- діагностика синтаксису
 	lualine_z = { 'os.date("%H:%M:%S")' } -- час
 }
